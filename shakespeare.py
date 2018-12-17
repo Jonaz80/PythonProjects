@@ -35,8 +35,8 @@ with open('insults.csv', 'r') as f:
         list_b.append(words[1])
         list_c.append(words[2].strip())
 
-app = App(title="Seasonal Greetings!")
-
+app = App(title="Shakespearean Greetings!", height=400, bg='white')
+picture = Picture(app, image='Shakespeare.png', align='center')
 welcome_message = Text(app, text="What is thy name syrah?", size=20, font="Times New Roman", color="#ff0000")
 my_name = TextBox(app, width="20")
 update_text = PushButton(app, command = insult_me, text="Meet Shakespeare")
